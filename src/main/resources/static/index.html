@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="bnpApp">
+<head>
+<meta charset="ISO-8859-1">
+<script src="angular.min.js"></script>
+<script src="script.js"></script>
+<title>Investment Recommendation API</title>
+</head>
+<body ng-controller="MainController">
+	<h1>Investment Recommendation API</h1>
+	<h2>Sample Clients:</h2>
+	<ul>
+		<li ng-repeat="client in clients"><a
+			ng-href="/api/client/{{client.id}}">{{client.clientName}}</a></li>
+	</ul>
+</body>
+</html>
